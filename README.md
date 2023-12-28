@@ -12,9 +12,6 @@
     <section class="gallery">
         <div class="photo">
             <img src="images/Untitled (51).jpg" alt="Photo 1">
-       
-    
-    </section>
 
     <footer>
         <p>&copy; 2023 federico michettoni</p>
