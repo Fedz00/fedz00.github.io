@@ -23,7 +23,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Your Name Photography</p>
+        <p>&copy; 2023 federico michettoni</p>
     </footer>
 
 </body>
