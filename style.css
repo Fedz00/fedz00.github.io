@@ -26,7 +26,7 @@ header {
 
 .photo img {
     width: 75%; /* Set the width to 75% of the container */
-    max-height: 150px; /* Maintain aspect ratio */
+    max-height: 2000px; /* Maintain aspect ratio */
 }
 
 footer {
