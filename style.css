@@ -44,8 +44,4 @@ footer {
     color: #000;
 }
 
-/* New styles for the gallery page */
-.gallery .photo img {
-    width: 75%; /* Set the width to 75% of the container on the gallery page */
-    max-height: 100%; /* Maintain aspect ratio */
-}
+
