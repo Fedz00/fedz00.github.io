@@ -55,7 +55,7 @@ header {
 /* Styles for the "Back" text */
 #backText {
     position: absolute;
-    left: 10px;
+    left: 20px; /* Adjusted the left position to match the arrow */
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
