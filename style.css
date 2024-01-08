@@ -31,34 +31,28 @@ header {
     max-height: 75%; /* Maintain aspect ratio */
 }
 
-/* Navigation arrow */
-#backArrow {
+/* Container for arrow and text */
+#backContainer {
     position: absolute;
-    left: 20px; /* Adjusted the left position for better placement */
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    padding: 0 20px; /* Increase the clickable area for better user experience */
+}
+
+/* Navigation arrow */
+#backArrow {
     opacity: 1; /* Initially visible */
     transition: opacity 0.3s ease;
 }
 
-#backArrow:hover {
+#backContainer:hover #backArrow {
     opacity: 0; /* Hide the arrow on hover */
-}
-
-/* New styles for the gallery page */
-.gallery .photo img {
-    width: 75%; /* Set the width to 75% of the container on the gallery page */
-    max-height: 100%; /* Maintain aspect ratio */
 }
 
 /* Styles for the "Back" text */
 #backText {
-    position: absolute;
-    left: 20px; /* Adjusted the left position to match the arrow */
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
     font-size: 18px;
     font-weight: bold;
     color: #333; /* Choose your text color */
@@ -66,8 +60,8 @@ header {
     transition: opacity 0.3s ease;
 }
 
-#backArrow:hover + #backText {
-    opacity: 1; /* Show the text when arrow is hovered */
+#backContainer:hover #backText {
+    opacity: 1; /* Show the text when container is hovered */
 }
 
 footer {
