@@ -21,24 +21,12 @@
         <div class="photo">
             <img src="images/IMG23.jpg" alt="Image 5" />
         </div>
-
-        <!-- Back text -->
-        <div id="backText" onclick="history.back()">Back</div>
     </section>
 
     <footer>
         <p>&copy; 2023 federico michettoni</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.addEventListener('click', function (event) {
-                // Check if the click is on the left side of the page
-                if (event.clientX < window.innerWidth / 2) {
-                    history.back();
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
