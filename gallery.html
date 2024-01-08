@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>More Images</title>
+    <title>Gallery</title>
+
+    <script>
+        document.getElementById('imageGallery').addEventListener('click', function (event) {
+            if (event.clientX < window.innerWidth / 2) {
+                history.back();
+            }
+        });
+    </script>
 </head>
 <body>
 
