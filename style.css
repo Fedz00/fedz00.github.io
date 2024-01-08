@@ -46,15 +46,36 @@ header {
     opacity: 1; /* Show on hover */
 }
 
+/* New styles for the gallery page */
+.gallery .photo img {
+    width: 75%; /* Set the width to 75% of the container on the gallery page */
+    max-height: 100%; /* Maintain aspect ratio */
+}
+
+/* Styles for the "Back" text */
+#backText {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff; /* Choose your text color */
+    background-color: #333; /* Choose your background color */
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#backText:hover {
+    opacity: 1;
+}
+
 footer {
     text-align: center;
     padding: 10px;
     background-color: #fff;
     color: #000;
-}
-
-/* New styles for the gallery page */
-.gallery .photo img {
-    width: 75%; /* Set the width to 75% of the container on the gallery page */
-    max-height: 100%; /* Maintain aspect ratio */
 }
