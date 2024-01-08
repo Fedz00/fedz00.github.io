@@ -5,13 +5,6 @@ body {
     background-color: #fff; /* White background */
 }
 
-header {
-    background-color: #fff;
-    color: #000;
-    text-align: center;
-    padding: 20px;
-}
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -31,28 +24,12 @@ header {
     max-height: 75%; /* Maintain aspect ratio */
 }
 
-/* Container for arrow and text */
-#backContainer {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    padding: 0 20px; /* Increase the clickable area for better user experience */
-}
-
-/* Navigation arrow */
-#backArrow {
-    opacity: 1; /* Initially visible */
-    transition: opacity 0.3s ease;
-}
-
-#backContainer:hover #backArrow {
-    opacity: 0; /* Hide the arrow on hover */
-}
-
 /* Styles for the "Back" text */
 #backText {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 18px;
     font-weight: bold;
     color: #333; /* Choose your text color */
@@ -60,13 +37,15 @@ header {
     transition: opacity 0.3s ease;
 }
 
-#backContainer:hover #backText {
-    opacity: 1; /* Show the text when container is hovered */
-}
-
 footer {
     text-align: center;
     padding: 10px;
     background-color: #fff;
     color: #000;
+}
+
+/* New styles for the gallery page */
+.gallery .photo img {
+    width: 75%; /* Set the width to 75% of the container on the gallery page */
+    max-height: 100%; /* Maintain aspect ratio */
 }
