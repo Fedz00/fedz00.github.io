@@ -37,5 +37,5 @@ footer {
 }
 /* New styles for the gallery page */
 .gallery .photo img {
-    width: 100%; /* Set the width to 100% of the container on the gallery page */
-    max-height: 100%; /* Maintain aspect ratio */
+    width: 75%; /* Set the width to 75% of the container on the gallery page */
+    max-height: 75%; /* Maintain aspect ratio */
