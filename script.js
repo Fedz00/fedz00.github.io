@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    // Capture click events on the entire document
     document.addEventListener('click', function (event) {
         // Check if the click is on the left side of the page
         if (event.clientX < window.innerWidth / 2) {
