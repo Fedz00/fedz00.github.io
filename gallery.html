@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Gallery</title>
-
-    <script>
-        document.getElementById('imageGallery').addEventListener('click', function (event) {
-            if (event.clientX < window.innerWidth / 2) {
-                history.back();
-            }
-        });
-    </script>
 </head>
 <body>
 
@@ -35,5 +27,15 @@
         <p>&copy; 2023 federico michettoni</p>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.addEventListener('click', function (event) {
+                // Check if the click is on the left side of the page
+                if (event.clientX < window.innerWidth / 2) {
+                    history.back();
+                }
+            });
+        });
+    </script>
 </body>
 </html>
